@@ -1,8 +1,8 @@
 local UserInputService = game:GetService("UserInputService")
 
-local function ode == Enum.KeyCode.Z then
-		getgenv().antilonInputBegan(input, _gameProcessed)
-	if input.KeyCock = true
+local function onInputBegan(input, _gameProcessed)
+	if input.KeyCode == Enum.KeyCode.Z then
+		getgenv().antilock = true
         game.StarterGui:SetCore("SendNotification", {
         Title = "On";
         Text = "Antilock Enabled";
@@ -11,10 +11,10 @@ local function ode == Enum.KeyCode.Z then
 	end
 end
 
-local function ode == Enum.KeyCode.Z then
-		getgenv().antilonInputBegan(input, _gameProcessed)
-	if input.KeyCock = false
-        game.StarterGui:SetCore("SendNotification", {
+local function onInputEnded(input, _gameProcessed)
+	if input.KeyCode == Enum.KeyCode.Z then
+		getgenv().antilock = false
+		game.StarterGui:SetCore("SendNotification", {
         Title = "Off";
         Text = "Antilock Disabled";
         Duration = 1;
